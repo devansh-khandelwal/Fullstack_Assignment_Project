@@ -1,0 +1,14 @@
+.container {
+    background-color: #d5dcf0;
+}
+.logoConatiner {
+    width: 250px;
+    background-color: white;
+}
+.logoConatiner img {
+    width: auto;
+    height: auto;
+}
+.sidebarContainer {
+    /* margin: 10px 25px; */
+}
