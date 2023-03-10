@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { Link } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // const { collapseSidebar } = useProSidebar();
+    return (
+        <div className="sidebarContainer">
+            <Sidebar
+                rootStyles={{
+                    backgroundColor: "#D5DCF0",
+                    height: "96vh",
+                }}
+            >
+                <Menu>
+                    <MenuItem> Score Card </MenuItem>
+                    <MenuItem> Risk Management </MenuItem>
+                    <MenuItem> Prior Authorization </MenuItem>
+                    <MenuItem> Claims </MenuItem>
+                    <MenuItem> My Profile </MenuItem>
+                </Menu>
+            </Sidebar>
+        </div>
+    );
 }
 
 export default App;
